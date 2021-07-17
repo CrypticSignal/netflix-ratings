@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <label for="api-key">OMDb API Key:</label>
+    <input type="text" id="api-key" />
+    <h3>Show the rating from a specific site or average the ratings from the 3 sites?</h3>
+    <select id="site">
+      <option value="metacritic">Metacritic</option>
+      <option value="imdb">IMDb</option>
+      <option value="tomatoes">Rotten Tomatoes</option>
+      <option selected value="average">Average</option>
+    </select>
+    <br /><br />
+    <button id="save">Save</button>
+    <div id="status"></div>
+    <script src="options.js"></script>
+  </body>
+</html>
