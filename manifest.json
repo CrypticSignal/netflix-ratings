@@ -1,15 +1,15 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Netflix Ratings",
   "description": "Shows the IMDb/Metacritic/Rotten Tomatoes rating (or an average of the 3) of the movie/series when you hover over its thumbnail.",
   "version": "1.0.0",
-  "browser_action": {
+  "action": {
     "default_popup": "options.html"
   },
   "content_scripts": [
     {
       "matches": ["*://www.netflix.com/*"],
-      "js": ["content.js", "options.js"]
+      "js": ["content.js"]
     }
   ],
   "permissions": ["storage"],
